@@ -4,6 +4,7 @@ document.getElementById('newCard').onclick = newCard
 
 let firstCard = 3
 let secondCard = 8
+let cards = [firstCard, secondCard]//array ordered list of cards
 let sum = firstCard + secondCard
 
 let hasBlacJack = false
@@ -21,7 +22,7 @@ function startGame (){
 }
 
 function renderGame() {
-  cardsEl.textContent = "Cards: " + firstCard + ", " + secondCard
+  cardsEl.textContent = "Cards: " + cards[0] + ", " + cards[1]
   sumEl.textContent = 'Sum: ' +sum
   
   if (sum <= 20) {
@@ -38,7 +39,6 @@ function renderGame() {
 
   //2. return the messageEL using message.El.textContent
   messageEl.textContent = message
-
 
 }
 
