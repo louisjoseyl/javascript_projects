@@ -22,7 +22,7 @@ function startGame (){
 }
 
 function renderGame() {
-  cardsEl.textContent = "Cards: " + cards[0] + ", " + cards[1]
+  cardsEl.textContent = "Cards: " + cards[0] + " " + cards[1]
   sumEl.textContent = 'Sum: ' +sum
   
   if (sum <= 20) {
@@ -46,10 +46,6 @@ function newCard(){
   console.log("Drawing a new card from deck.")
   let card = 5
   sum += card
+  cards.push(card)
   renderGame()
 }
-
-
-
-
-
