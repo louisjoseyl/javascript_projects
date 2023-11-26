@@ -3,6 +3,10 @@ document.getElementById('startGame').onclick = startGame
 document.getElementById('newCard').onclick = newCard
 
 
+let player = {
+  name : 'John',
+  chips : 145
+}
 let cards = []//array ordered list of cards
 let sum = 0
 
@@ -15,15 +19,11 @@ let message = ''
 let messageEl = document.getElementById('message-el')
 let sumEl = document.getElementById('sum-el')
 let cardsEl = document.getElementById('cards-el')
-
-let player = {
-  name : 'John',
-  chips : 145
-}
-
-
 let playerEl = document.getElementById('player-el')
 playerEl.textContent = player.name + ": $" + player.chips
+
+
+
 // create a function, getRandomCard(), that always return the number 5
 
 function getRandomCard() {
@@ -80,9 +80,17 @@ function newCard(){
     sum += card
     cards.push(card)
     renderGame()
-
-  }
-  else{
-    return messageEl.textContent = 'get your ass outta here'
   }
 }
+
+
+
+/// what we learned in this part is getting an array skills
+// we also worked with object
+// we also worked with boolean
+// the if else statement ( these are keys in any program)
+// comparison operators 
+// logical operators
+// for loops
+// math object
+// functions and how to use the return statement
